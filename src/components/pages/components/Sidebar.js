@@ -1,3 +1,6 @@
+/* eslint-disable camelcase */
+/* eslint-disable react/prop-types */
+
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleDown, faGauge, faList, faClipboardUser, faDisplay, faSliders, faGlobe, faHeart, faGear, faDatabase, faLayerGroup, faReceipt, faArrowRight, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
@@ -6,6 +9,7 @@ class Sidebar extends Component {
   constructor() {
     super();
     this.state = {
+      activeSideBar: null,
       dashboardClicked: true,
       activeDashboardService: 'active-service',
       activeDashboardDropdowns: 'active-dashboard-dropdowns',
@@ -28,6 +32,16 @@ class Sidebar extends Component {
       pagesClicked: false,
       activePagesService: null,
     };
+  }
+
+  UNSAFE_componentWillReceiveProps(props) {
+    if (props.MainProps.activeSideBar === true) {
+      this.setState({ activeSideBar: 'active-side-bar' });
+    }
+
+    if (props.MainProps.activeSideBar !== true) {
+      this.setState({ activeSideBar: 'sidebar-container' });
+    }
   }
 
   onClickDashboard(key) {
@@ -119,9 +133,9 @@ class Sidebar extends Component {
   }
 
   render() {
-    const { dashboardClicked, activeDashboardService, activeDashboardDropdowns, activeAppointmentService, staffClicked, activeStaffService, appsClicked, activeAppsService, chartsClicked, activeChartsService, bootstrapClicked, activeBootstrapService, pluginsClicked, activePluginsService, activeWidgetService, formsClicked, activeFormsService, tableClicked, activeTableService, pagesClicked, activePagesService } = this.state;
+    const { activeSideBar, dashboardClicked, activeDashboardService, activeDashboardDropdowns, activeAppointmentService, staffClicked, activeStaffService, appsClicked, activeAppsService, chartsClicked, activeChartsService, bootstrapClicked, activeBootstrapService, pluginsClicked, activePluginsService, activeWidgetService, formsClicked, activeFormsService, tableClicked, activeTableService, pagesClicked, activePagesService } = this.state;
     return (
-      <div className="sidebar-container">
+      <div className={`sidebar-container ${activeSideBar}`}>
         <button type="button" className={`dropdown-btn ${activeDashboardService}`} onClick={(key) => { this.onClickDashboard(key); }}>
           <FontAwesomeIcon className="front-icon" icon={faGauge} />
           Dashboard
@@ -191,7 +205,7 @@ class Sidebar extends Component {
         </button>
 
         <div className="sidebar-message">
-          <p>Check your job schedule <spa><FontAwesomeIcon className="icon" icon={faCalendarDays} /></spa></p>
+          <p>Check your job schedule <span><FontAwesomeIcon className="icon" icon={faCalendarDays} /></span></p>
           <FontAwesomeIcon className="icon" icon={faArrowRight} />
         </div>
 

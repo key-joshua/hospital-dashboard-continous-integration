@@ -155,6 +155,125 @@
             .pupple-box { background: linear-gradient(90deg, #a338c7bd 26.16%, #9f54ba 46.16%, #9e2ac8 100%) }
         }
 
+        .chart-container {
+            width: 100%;
+            display: flex;
+            margin: 30px auto;
+
+            .revenue-section {
+                width: 34%;
+                margin-right: 30px;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    margin: 30px 30px 30px 30px;
+                    
+                    span {
+                        float: right;
+                        color: $green;
+                        font-size: $small;
+                    }
+                }
+                
+                .sub-title-container {
+                    color: #369DC9;
+                    font-weight: 900;
+                    font-size: $X-large;
+                    margin: 00px 30px 00px 30px;
+                    
+                    span {
+                        font-weight: 400;
+                        color: #9e2ac8;
+                        margin-left: 10px;
+                        font-size: $small;
+                    }
+                }
+
+                .charts-container {
+                    width: 85%;
+                    margin: 30px 30px 00px 30px;
+                }
+
+                .bottom-container {
+                    margin-top: 15px;
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                    span {
+                        font-size: 13px;
+                        margin-right: 20px;
+
+                        .icon {
+                            font-size: 20px;
+                            margin-right: 05px;
+                        }
+                        
+                        .blue {color: #369DC9 }
+                        .green { color: #29b952 }
+                    }
+                }
+            }
+
+            .stastic-section {
+                width: 60%;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    margin: 30px 30px 30px 30px;
+
+                    span {
+                        float: right;
+                        padding: 10px;
+                        margin-left: 10px;
+                        font-size: $small;
+                        border-radius: 05px;
+
+                        a {
+                            color: $green;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .active {
+                        background: $green;
+
+                        a {
+                            color: $white
+                        }
+                    }
+                }
+                
+                .charts-container {
+                    width: 85%;
+                    margin: 30px 30px 00px 30px;
+                }
+
+                .bottom-container {
+                    margin-top: 15px;
+                    text-align: center;
+
+                    span {
+                        font-size: 13px;
+                        margin-right: 20px;
+
+                        .icon {
+                            font-size: 20px;
+                            margin-right: 05px;
+                        }
+                        
+                        .red { color: #ef6262 }
+                        .green { color: #29b952 }
+                    }
+                }
+            }
+        }
+
         .user-container {
             width: 100%;
             display: flex;
@@ -340,125 +459,6 @@
             }
         }
 
-        .chart-container {
-            width: 100%;
-            display: flex;
-            margin: 30px auto;
-
-            .revenue-section {
-                width: 34%;
-                margin-right: 30px;
-                background: $white;
-                border-radius: 10px;
-                
-                .title-container {
-                    color: $black;
-                    font-size: $X-large;
-                    margin: 30px 30px 30px 30px;
-                    
-                    span {
-                        float: right;
-                        color: $green;
-                        font-size: $small;
-                    }
-                }
-                
-                .sub-title-container {
-                    color: #369DC9;
-                    font-weight: 900;
-                    font-size: $X-large;
-                    margin: 00px 30px 00px 30px;
-                    
-                    span {
-                        font-weight: 400;
-                        color: #9e2ac8;
-                        margin-left: 10px;
-                        font-size: $small;
-                    }
-                }
-
-                .charts-container {
-                    width: 85%;
-                    margin: 30px 30px 00px 30px;
-                }
-
-                .bottom-container {
-                    margin-top: 15px;
-                    text-align: center;
-                    margin-bottom: 30px;
-
-                    span {
-                        font-size: 13px;
-                        margin-right: 20px;
-
-                        .icon {
-                            font-size: 20px;
-                            margin-right: 05px;
-                        }
-                        
-                        .blue {color: #369DC9 }
-                        .green { color: #29b952 }
-                    }
-                }
-            }
-
-            .stastic-section {
-                width: 60%;
-                background: $white;
-                border-radius: 10px;
-                
-                .title-container {
-                    color: $black;
-                    font-size: $X-large;
-                    margin: 30px 30px 30px 30px;
-
-                    span {
-                        float: right;
-                        padding: 10px;
-                        margin-left: 10px;
-                        font-size: $small;
-                        border-radius: 05px;
-
-                        a {
-                            color: $green;
-                            text-decoration: none;
-                        }
-                    }
-
-                    .active {
-                        background: $green;
-
-                        a {
-                            color: $white
-                        }
-                    }
-                }
-                
-                .charts-container {
-                    width: 85%;
-                    margin: 30px 30px 00px 30px;
-                }
-
-                .bottom-container {
-                    margin-top: 15px;
-                    text-align: center;
-
-                    span {
-                        font-size: 13px;
-                        margin-right: 20px;
-
-                        .icon {
-                            font-size: 20px;
-                            margin-right: 05px;
-                        }
-                        
-                        .red { color: #ef6262 }
-                        .green { color: #29b952 }
-                    }
-                }
-            }
-        }
-
         .footer-container {
             margin: 20px auto;
             text-align: center;
@@ -468,4 +468,184 @@
         }
     }
 
-}    
+}
+
+@media(max-width: 1200px) {
+    .dashboard-page {    
+        .dashboard-container {        
+            top: 08%;
+            left: 1%;
+            width: 97%;
+
+            .header-container {
+
+                .header-section {
+                    margin-top: 05px;
+                    .title {
+                        font-size: 1.5rem;
+                    }
+
+                    .title-desc {
+                        margin-top: 05px;
+                        font-size: 0.7rem;
+                    }
+                }
+                
+                .search-section {
+                    .input-section {
+                        margin-top: 05px;
+                        margin-right: 10%;
+                        padding: 05px 10px;
+
+                        input {
+                            font-size: 12px;
+                            padding: 07px 05px;
+                        }
+
+                        .icon {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    span {
+                        padding: 06px 8px;
+                        
+                        .icon {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .icon-container {
+                .icon-one {
+                    top: 20%; 
+                }
+                
+                .icon-two {
+                    top: 27%; 
+                }
+                
+                .icon-three {
+                    top: 80%; 
+                }
+                
+                .icon-four {
+                    top: 87%;
+                }
+            }
+
+            .box-container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                .box-section {
+                    width: 85%;
+                    margin: 10px;
+                    padding: 15px 10px;
+                    
+                    .box-desc {
+                        width: 100%;
+                        font-size: 15px;
+
+                        .badge { margin-right: 10px; }
+                        .number { font-size: 15px; font-weight: 400 }
+                        .icon { margin-top: 05px; margin-right: 10px; font-size: 15px; }
+                    }
+                }
+            }        
+            
+            .chart-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                .revenue-section {
+                    width: 89%;
+                    margin: 30px;
+                }
+                
+                .stastic-section {
+                    width: 89%;
+                    margin: 30px;
+                    
+                    .title-container {
+                        font-size: $large;
+    
+                        span {
+                            padding: 05px;
+                            margin-left: 05px;
+                            font-size: $small;
+                        }
+                    }
+                }
+            }
+                
+            .user-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                .doctor-section {
+                    width: 89%;
+                    margin: 30px;
+
+                    .title-container {
+                        font-size: $large;
+    
+                        span {
+                            font-size: $small
+                        }
+                    }
+
+                    .des-container {
+                        margin: 10px;
+
+                        .user-datails {
+                            font-size: 12px;
+                            img {
+                                min-width: 100px;
+                                max-width: 100px;
+                                min-height: 100px;
+                                max-height: 100px;
+                                border-radius: 10px;
+                            }
+
+                            .bottom-center {
+                                width: 50px;
+                                font-size: 12px;
+                            }
+
+                            .desc {
+                                font-size: 08px;
+                            }
+
+                            div {
+                                .icon {
+                                    padding: 05px;
+                                    font-size: 10px;
+                                    margin: auto 05px;
+                                }
+                            }
+                        }
+                    }
+
+                    .previous {
+                        top: -45%;
+                        left: -15px;
+                        padding: 15px 15px;
+                        
+                    }
+
+                    .next {
+                        top: -50%;
+                        right: -15px;
+                        padding: 15px 15px;
+                    }
+                }
+                
+                .patient-section {
+                    width: 89%;
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}
