@@ -1,0 +1,113 @@
+@import './size.scss';
+@import './colors.scss';
+
+.navbar-container {
+	height: 13%;
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	background-color: $white;
+
+	.logo-container {
+		width: 10%;
+        display: grid;
+		margin-left: 2%;
+        grid-template-columns: 1fr 1fr;
+
+		img {
+			width: 35px;
+			height: 42px;
+			margin-top: 25px;
+		}
+
+		h1 {
+			color: #3d9662;
+			font-weight: 900;
+			font-size: 2.2rem;
+		}
+	}
+	
+	.title-container {
+		color: $black;
+		font-size: 28px;
+		cursor: pointer;
+		font-weight: 600;
+		margin-left: 10%;
+
+		.icon {
+			width: 30px;
+			height: 20px;
+			margin-right: 20px;
+			display: inline-block;
+			background-repeat:no-repeat;
+			background-image: url("../images/before-bars.png")
+		}
+
+		.icon:hover {
+			transition: all 1.5s ease;
+			background: url("../images/after-bars.png")
+		}
+	}
+
+	.profile-container {
+		right: 0;
+		margin-right: 2%;
+		position: absolute;
+		
+		.notification {
+			color: $green;
+			margin-right: 30px;
+			font-size: $large;
+			padding: 08px 13px;
+			position: relative;
+			border-radius: 50%;
+			text-decoration: none;
+			display: inline-block;
+            border: 1px solid $grayActive;
+			
+			.badge {
+				top: -5px;
+				right: -10px;
+				color: $white;
+				font-weight: 600;
+				padding: 3px 6px;
+				background: $green;
+				border-radius: 50%;
+				position: absolute;
+				font-size: $X-small;
+			}
+		}
+
+		.gift {
+			color: $gray;
+			.badge {
+				background: $gray;
+			}
+		}
+
+		.avatar-container {
+			margin-left: 10px;
+			border-radius: 25px;
+			display: inline-block;
+			background-color: #e8f6ec;
+
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				vertical-align:middle;
+			}
+
+			.name {
+				color: $green;
+				margin-left: 20px;
+				margin-right: 20px;
+				span {
+					font-weight: 900;
+				}
+			}
+		}
+	}
+}

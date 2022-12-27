@@ -1,0 +1,105 @@
+.add-home-window {
+    top: 02%;
+    right: 05%;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    opacity:0; //IE9, Firefox, Chrome, Opera, and Safari
+    filter:alpha(opacity=0); //IE8 and earlier
+
+    .content {
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0px 2px 12px 0px rgba(10, 10, 10, 0.4);
+
+        .header {
+            height: 40px;
+            overflow: hidden;
+            border-radius: 10px 10px 00px 00px;
+            box-shadow: 0px 2px 3px 0px rgba(10, 10, 10, 0.4);
+            background:  linear-gradient(90deg, #25b14dad 26.16%, #46be68 46.16%, #29b952 100%);
+
+            h2 {
+                color: white;
+                font-size: 15px;
+                padding-left: 30px;
+                font-weight: normal;
+            }
+
+            .close-icon {
+                position: absolute;
+                font-weight: bold;
+                cursor: pointer;
+                color: white;
+                right: 20px;
+                top: 10px;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                padding: 5px;
+                border-radius: 100%;
+                background-color: rgb(255, 255, 255);
+            }
+        
+        }
+
+        .body {
+            display: flex;
+            margin: 10px 20px 10px 20px;
+
+            .logo-icon {
+                padding: 05px;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 10px;
+                border: 1px solid $green;
+            }
+        
+            p {
+                font-size: 13px;
+                color: #414040;
+                margin-left: 20px;
+                text-align: justify;
+            }
+        
+            img {
+                width: 40px;
+                height: 30px;
+            }
+        }
+
+        .line {
+            width: 80%;
+            height: 1px;
+            margin: auto;
+            background: linear-gradient(90deg, #25b14dad 26.16%, #46be68 46.16%, #29b952 100%);
+        }
+
+        .add-btn {
+            
+            margin: auto;
+            padding: 05px;
+            text-align: center;
+            
+            button {
+                border: none;
+                color: white;
+                cursor: pointer;
+                font-size: 12px;
+                border-radius: 20px;
+                padding: 07px 20px 07px 20px;
+                background: linear-gradient(90deg, #25b14dad 26.16%, #46be68 46.16%, #29b952 100%);
+            }
+
+            button:active {
+                background: linear-gradient(90deg, #042341 0%, #042341 46.16%, #042341 100%);
+            }
+        }
+
+        
+    }
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Josue BYIRINGIRO">
+        <meta name="theme-color" content="#ffffff">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="ERES Hospital Admin Dashboard" />
+        
+        <link rel="manifest" href="./manifest.json" />
+        <link rel="apple-touch-icon" href="./logo.png" />
+        <link rel="icon" type="image/png" href="./logo.png" />
+        <title>ERES Hospital Admin Dashboard</title>
+
+        <style >
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+    
+            .error-connection {
+                width: 100%;
+                height: 100vh;
+                background: #ffffff;
+                background-size: cover;
+                background-position: center;
+                background-image: linear-gradient(#24a1248f, #43a23065), url( ./images/background.png);
+            }
+    
+            .title {
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+                padding: 40px;
+                text-align: center;
+                width: fit-content;
+                position: absolute;
+                border-radius: 10px;
+                transition: 1.5s ease;
+                filter:alpha(opacity=0);
+                background: #34940e;
+                transform: translate(-50%, -50%);
+                box-shadow: 00px 00px 00px 02px rgba(255, 255, 255, 0.5);
+            }
+    
+            img {
+                width: 80px;
+                height: 50px;
+                padding: 15px;
+                border-radius: 10px;
+                background: white;
+                border: 1px solid #34940e;
+            }
+    
+            .title h1 {
+                font-size: 25px;
+                color: rgb(255, 255, 255);
+            }
+    
+            @media (max-width: 500px) {
+                .title h1 {
+                    font-size: 20px;
+                }
+            }
+    
+            @media (max-width: 430px) {
+                .title h1 {
+                    font-size: 15px;
+                }
+            }
+    
+            @media (max-width: 350px) {
+                
+                .title {
+                    padding: 20px;
+                }
+    
+                
+            .title h1 {
+                font-size: 12px;
+            }
+    
+            }
+    
+            @media (max-width: 245px) {
+                
+                .title {
+                    padding: 10px;
+                }
+    
+                
+            .title h1 {
+                font-size: 10px;
+            }
+    
+            }
+    
+            .title:hover {
+                background: #34940e;
+                box-shadow: 00px 00px 00px 06px rgba(255, 255, 255, 0.5);
+            }
+    
+        </style>
+    </head>
+    <body>
+        <header class="error-connection">
+               
+            <div class="title">
+                <img src="./images/logo.png" alt="logo"/>
+                <h1>Please check internet connection</h1>
+    
+            </div>
+    
+        </header>
+    
+        <script  type="text/babel">
+            
+          let x = 0;
+          let displayTime;
+          const limitOpacity = 0.5;
+          const prompWindow = document.querySelector('.title');
+          
+          
+          prompWindow.style.display = 'block';
+    
+          function Visible() {
+            for(let x = 0; x <= limitOpacity; x+= 0.0001){
+                clearInterval(displayTime);
+                prompWindow.style.opacity = x;
+                prompWindow.style.filter = `alpha(opacity=${x * 100})`;
+    
+            }
+          }
+    
+          displayTime = setInterval(Visible, 25);
+    
+        </script>
+    </body>
+
+</html>

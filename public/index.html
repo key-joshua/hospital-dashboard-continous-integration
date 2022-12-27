@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#eaeaea">
+    <meta name="author" content="Josue BYIRINGIRO">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ERES Hospital Admin Dashboard for service help" />
+      
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+
+    <link rel="icon" href="./logo.png" />
+    <link rel="apple-touch-icon" href="./logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/logo72.png" />
+    <link rel="apple-touch-icon" sizes="96x96" href="./images/logo96.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/logo144.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="./images/logo128.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/logo144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/logo152.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="./images/logo192.png" />
+    
+
+    <link rel="icon" type="image/png" sizes="72x72" href="./images/logo72.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/logo96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/logo192.png" />
+    
+    <link href="./images/logo512.png" media="(device-width: 512px) and (device-height: 512px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="./logo612.png" media="(device-width: 612px) and (device-height: 612px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="./images/logo712.png" media="(device-width: 712px) and (device-height: 712px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="./images/logo812.png" media="(device-width: 812px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="./images/logo912.png" media="(device-width: 912px) and (device-height: 912px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="./images/logo1012.png" media="(device-width: 1012px) and (device-height: 1012px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>ERES Hospital Admin Dashboard</title>
+  </head>
+    
+  <body>
+    <div id="root"></div>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+            console.log('Worker registration successful', registration.scope);
+          }, function(err) {
+            console.log('Worker registration failed', err);
+          }).catch(function(err) {
+            console.log(err);
+          });
+        });
+      } else {
+        console.log('Service Worker is not supported by browser.');
+      }
+    </script>
+  
+  </body>
+</html>
+
+  </body>
+</html>
