@@ -112,3 +112,64 @@
         }
     }
 }
+
+@media(max-width: 1200px) {
+    .sidebar-container {
+        top: 08%;
+        width: 40%;
+        display: none;
+
+        .dropdown-btn, a {
+            font-size: $small;
+            .front-icon {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+                
+            .back-icon {
+                margin-right: 20px;
+            }
+        }
+        
+        .dropdown-container {
+            a {
+                padding-left: 30px;
+            }
+        
+        }
+        
+        .sidebar-message {
+            width: 100px;
+            margin: 10px;
+            font-size: $small;
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            P {
+                .icon {
+                    float: right;
+                    opacity: 0.2;
+                    color: $white;
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .sidebar-footer {
+            font-size: 09px;
+            margin: 20px 10px;
+
+            div {
+                margin-top: 50px auto;
+                .icon {
+                    margin-left: 05px;
+                    margin-right: 05px;
+                }
+            }
+        }
+    }
+}
+
+.active-side-bar {
+    display: block;
+}

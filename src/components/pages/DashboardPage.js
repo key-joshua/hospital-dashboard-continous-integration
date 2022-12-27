@@ -5,7 +5,6 @@ import Icon from './components/Icon';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Sidebar from './components/Sidebar';
 import UserCard from './components/UserCard';
 import ChartCard from './components/ChartCard';
 import InstallMe from './components/InstallMe';
@@ -16,8 +15,6 @@ class DashboardPage extends Component {
       <div className="dashboard-page">
         <InstallMe />
         <Navbar />
-        <Sidebar />
-
         <div className="dashboard-container">
           <Header />
           <Icon />

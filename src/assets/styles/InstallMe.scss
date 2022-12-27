@@ -101,5 +101,25 @@
 
         
     }
+}
 
+@media (max-width: 900px) {
+    .add-home-window {
+        .content {
+            .header {
+                h2 {
+                    font-size: 10px;
+                    padding-left: 10px;
+                }
+            }
+
+            .body {
+                display: block;
+                margin: 05px 05px 05px 05px;
+                p {
+                    margin: 00px;
+                }
+            }
+        }
+    }
 }
