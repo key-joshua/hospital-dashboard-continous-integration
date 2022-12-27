@@ -1,0 +1,88 @@
+{
+  "lang": "en",
+  "name": "ERES Hospital Admin Dashboard",
+  "short_name": "ERES D.",
+  "icons": [
+    {
+      "src": "./images/logo32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo43.png",
+      "sizes": "43x43",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo612.png",
+      "sizes": "612x612",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo712.png",
+      "sizes": "712x712",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo812.png",
+      "sizes": "812x812",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo912.png",
+      "sizes": "912x912",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/logo1012.png",
+      "sizes": "1012x1012",
+      "type": "image/png"
+    }
+  ],
+
+  "scope": ".",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#81c05d",
+  "background_color": "#ffffff"
+}

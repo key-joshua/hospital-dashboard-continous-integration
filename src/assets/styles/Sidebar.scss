@@ -1,0 +1,114 @@
+@import './size.scss';
+@import './colors.scss';
+
+.sidebar-container:hover { 
+    overflow: auto;
+}
+
+.sidebar-container {
+    top: 13%;
+    left: 0px;
+    z-index: 1;
+    width: 20%;
+    height: 87%;
+    font-weight: 500;
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s;
+    background: $white;
+
+    .dropdown-btn, a {
+        width: 100%;
+        border: none;
+        outline: none;
+        display: block;
+        cursor: pointer;
+        background: none;
+        text-align: left;
+        color: #818181;
+        font-size: $medium;
+        padding: 15px 00px;
+        text-decoration: none;
+
+        .front-icon {
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+
+        .back-icon {
+            right: 0;
+            position: absolute;
+            margin-right: 50px;
+        }
+    }
+
+    .dropdown-container {
+        display: none;
+        a {
+            width: 55%;
+            padding-left: 80px;
+        }
+
+        .dropdown-container-element {
+            color: $green;
+        }
+    }
+    
+    .dropdown-btn:hover, a:hover {
+        color: $green;
+    }
+
+    .active-dashboard-dropdowns {
+        display: block;
+    }
+
+    .active-service {
+        color: $white;
+        background: $green;
+        border-radius: 00px 00px 50px 00px;
+    }
+    
+    .active-service:hover {
+        color: $white;
+    }
+
+    .sidebar-message {
+        width: 180px;
+        margin: 30px;
+        color: $white;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background: $orange;
+
+        P {
+            .icon {
+                float: right;
+                opacity: 0.2;
+                color: $white;
+                font-size: 100px;
+                margin-top: -25px;
+                margin-right: -20px;
+                transform: rotate(-20deg);
+            }
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+    }
+
+    .sidebar-footer {
+        font-size: 15px;
+        color: #818181;
+        margin: 50px 20px;
+
+        div {
+            margin-top: 50px auto;
+            .icon {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

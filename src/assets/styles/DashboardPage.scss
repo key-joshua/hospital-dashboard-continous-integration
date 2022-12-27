@@ -1,0 +1,471 @@
+@import './size.scss';
+@import './colors.scss';
+
+.dashboard-page {    
+    .dashboard-container {        
+        top: 13%;
+        left: 22%;
+        z-index: 0;
+        width: 78%;
+        position: absolute;
+
+        .header-container {
+            width: 100%;
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr;
+            .header-section {
+                .title {
+                    color: $black;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                }
+
+                .title-desc {
+                    font-weight: 500;
+                    color: #818181;
+                    margin-top: 05px;
+                }
+            }
+
+            .search-section {
+                .input-section {
+                    right: 0;
+                    margin-top: 05px;
+                    margin-right: 10%;
+                    padding: 08px 20px;
+                    position: absolute;
+                    background: $white;
+                    border-radius: 25px;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        font-size: 15px;
+                        color: #818181;
+                        padding: 10px 15px;
+                    }
+
+                    .icon {
+                        font-size: 1rem;
+                        color: #818181;
+                        vertical-align:middle;
+                    }
+                }
+
+                span {
+                    right: 0;
+                    margin-top: 05px;
+                    margin-right: 2.5%;
+                    border-radius: 50%;
+                    padding: 12px 14px;
+                    position: absolute;
+                    background: $orange;
+                    
+                    .icon {
+                        color: $white;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .icon-container {
+            color: $white;
+            font-size: 22px;
+            cursor: pointer;
+            
+            .icon-one {
+                top: 33%; 
+                right: 0%;
+                z-index: 2;
+                position: fixed;
+                padding: 08px 13px;
+                background: #9e2ac8;
+                border-radius: 10px 00px 00px 10px;
+            }
+            
+            .icon-two {
+                top: 41%; 
+                right: 0%;
+                z-index: 2;
+                position: fixed;
+                padding: 08px 10px;
+                background: #29b952;
+                border-radius: 10px 00px 00px 10px;
+            }
+            
+            .icon-three {
+                top: 80%; 
+                right: 0%;
+                z-index: 2;
+                position: fixed;
+                padding: 08px 13px;
+                border-radius: 50%;
+                background: $orange;
+            }
+            
+            .icon-four {
+                top: 88%; 
+                right: 0%;
+                z-index: 2;
+                position: fixed;
+                padding: 08px 13px;
+                border-radius: 50%;
+                background: linear-gradient(45deg,#1ebbf0 8%,#39dfaa 100%);
+            }
+        }
+        
+        .box-container {
+            width: 100%;
+            display: grid;
+            margin-top: 30px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .box-section {
+                width: 75%;
+                display: flex;
+                color: $white;
+                padding: 30px 20px;
+                border-radius: 15px;
+
+                .box-desc {
+                    width: 100%;
+                    font-size: 14px;
+
+                    .badge { float: right; margin-right: 50px; }
+                    .number { font-size: 20px; font-weight: 900 }
+                    .icon { float: right; margin-top: 05px; margin-right: 50px; font-size: 20px; }
+                }
+
+                .box-icon {
+                    .icon {
+                        float: right;
+                        font-size: 30px;
+                        padding: 20px 20px;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                    }
+                }
+            }
+
+            .red-box { background: linear-gradient(90deg, #ff7878ca 26.16%, #fa6b6bd7 46.16%, #ef6262 100%) }
+            .green-box { background: linear-gradient(90deg, #25b14dad 26.16%, #46be68 46.16%, #29b952 100%) }
+            .blue-box { background: linear-gradient(90deg, #39a0ccc6 26.16%, #5ea4c5 46.16%, #369DC9 100%) }
+            .pupple-box { background: linear-gradient(90deg, #a338c7bd 26.16%, #9f54ba 46.16%, #9e2ac8 100%) }
+        }
+
+        .user-container {
+            width: 100%;
+            display: flex;
+            margin: 30px auto;
+
+            .doctor-section {
+                width: 60%;
+                margin-right: 30px;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    padding: 30px 30px 00px 30px;
+
+                    span {
+                        float: right;
+                        color: $green;
+                        font-size: $medium;
+
+                        a {
+                            color: $green;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .des-container {
+                    margin: 30px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+
+                    .user-datails {
+                        text-align: center;
+                        img {
+                            min-width: 130px;
+                            max-width: 130px;
+                            min-height: 130px;
+                            max-height: 130px;
+                            border-radius: 10px;
+                        }
+
+                        .bottom-center {
+                            width: 60px;
+                            bottom: 20px;
+                            color: $white;
+                            font-size: 13px;
+                            position: relative;
+                            background: $green;
+                            border-radius: 15px;
+                            
+                            .star-icon { color: #ffb800; margin-right: 2.5px; }
+                        }
+
+                        .name {
+                            color: $black;
+                            font-weight: 600;
+                            margin: 05px auto;
+                        }
+
+                        .career {
+                            color: $green;
+                            font-weight: 600;
+                            margin: 05px auto;
+                        }
+
+                        .desc {
+                            color: $green;
+                            font-size: 13px;
+                            color: #818181;
+                            margin: 05px auto;
+                        }
+
+                        div {
+                            margin: 05px auto;
+                            .icon {
+                                color: $green;
+                                padding: 10px;
+                                font-size: 20px;
+                                margin: auto 10px;
+                                border-radius: 50%;
+                                background: #e8f6ec;
+                            }
+                        }
+                    }
+                }
+
+                .previous {
+                    top: -35%;
+                    left: -15px;
+                    color: $green;
+                    padding: 20px;
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    background: $white;
+                    position: relative;
+                    border-radius: 10px;
+                    box-shadow: 05px 05px 30px 00px rgba(1, 31, 23, 0.198);
+                    
+                }
+
+                .next {
+                    top: -40%;
+                    right: -15px;
+                    float: right;
+                    color: $green;
+                    cursor: pointer;
+                    padding: 15px 20px;
+                    background: $white;
+                    position: relative;
+                    border-radius: 10px;
+                    box-shadow: 05px 05px 30px 00px rgba(1, 31, 23, 0.198);
+                }
+            }
+
+            .patient-section {
+                width: 34%;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    padding: 30px 30px 00px 30px;
+                    
+                    span {
+                        float: right;
+                        color: $green;
+                        font-size: $medium;
+
+                        a {
+                            color: $green;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .des-container {
+                    margin: 15px 30px;
+
+                    .user-datails {
+                        display: grid;
+                        padding: 15px 00px;
+                        grid-template-columns: 1fr 1fr;
+                        border-bottom: 1px solid #eaeaea;
+
+                        .profile-details {
+                            display: flex;
+                            img {
+                                min-width: 50px;
+                                max-width: 50px;
+                                min-height: 50px;
+                                max-height: 50px;
+                                border-radius: 50%;
+                                margin-right: 20px;
+                            }
+    
+                            .info{
+                                font-size: 15px;
+                                .name {
+                                    color: $black;
+                                    font-weight: 600;
+                                }
+    
+                                .age {
+                                    color: #818181;
+                                }
+                            }
+                        }
+
+                        .status {
+                            margin-top: 15px;
+                            text-align: right;
+                        }
+
+                        .blue {color: #369DC9 }
+                        .red { color: #ef6262 }
+                        .green { color: #29b952 }
+                        .yellow { color: #ffb800 }
+                    }
+                }
+            }
+        }
+
+        .chart-container {
+            width: 100%;
+            display: flex;
+            margin: 30px auto;
+
+            .revenue-section {
+                width: 34%;
+                margin-right: 30px;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    margin: 30px 30px 30px 30px;
+                    
+                    span {
+                        float: right;
+                        color: $green;
+                        font-size: $small;
+                    }
+                }
+                
+                .sub-title-container {
+                    color: #369DC9;
+                    font-weight: 900;
+                    font-size: $X-large;
+                    margin: 00px 30px 00px 30px;
+                    
+                    span {
+                        font-weight: 400;
+                        color: #9e2ac8;
+                        margin-left: 10px;
+                        font-size: $small;
+                    }
+                }
+
+                .charts-container {
+                    width: 85%;
+                    margin: 30px 30px 00px 30px;
+                }
+
+                .bottom-container {
+                    margin-top: 15px;
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                    span {
+                        font-size: 13px;
+                        margin-right: 20px;
+
+                        .icon {
+                            font-size: 20px;
+                            margin-right: 05px;
+                        }
+                        
+                        .blue {color: #369DC9 }
+                        .green { color: #29b952 }
+                    }
+                }
+            }
+
+            .stastic-section {
+                width: 60%;
+                background: $white;
+                border-radius: 10px;
+                
+                .title-container {
+                    color: $black;
+                    font-size: $X-large;
+                    margin: 30px 30px 30px 30px;
+
+                    span {
+                        float: right;
+                        padding: 10px;
+                        margin-left: 10px;
+                        font-size: $small;
+                        border-radius: 05px;
+
+                        a {
+                            color: $green;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .active {
+                        background: $green;
+
+                        a {
+                            color: $white
+                        }
+                    }
+                }
+                
+                .charts-container {
+                    width: 85%;
+                    margin: 30px 30px 00px 30px;
+                }
+
+                .bottom-container {
+                    margin-top: 15px;
+                    text-align: center;
+
+                    span {
+                        font-size: 13px;
+                        margin-right: 20px;
+
+                        .icon {
+                            font-size: 20px;
+                            margin-right: 05px;
+                        }
+                        
+                        .red { color: #ef6262 }
+                        .green { color: #29b952 }
+                    }
+                }
+            }
+        }
+
+        .footer-container {
+            margin: 20px auto;
+            text-align: center;
+            span {
+                color: $green;
+            }
+        }
+    }
+
+}    
