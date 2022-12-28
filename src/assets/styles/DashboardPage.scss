@@ -284,6 +284,7 @@
                 margin-right: 30px;
                 background: $white;
                 border-radius: 10px;
+                position: relative;
                 
                 .title-container {
                     color: $black;
@@ -363,28 +364,25 @@
                 }
 
                 .previous {
-                    top: -35%;
-                    left: -15px;
+                    top: 40%;
+                    left: -2%;
                     color: $green;
-                    padding: 20px;
                     cursor: pointer;
                     padding: 15px 20px;
                     background: $white;
-                    position: relative;
+                    position: absolute;
                     border-radius: 10px;
                     box-shadow: 05px 05px 30px 00px rgba(1, 31, 23, 0.198);
-                    
                 }
 
                 .next {
-                    top: -40%;
-                    right: -15px;
-                    float: right;
+                    top: 40%;
+                    right: -2%;
                     color: $green;
                     cursor: pointer;
                     padding: 15px 20px;
                     background: $white;
-                    position: relative;
+                    position: absolute;
                     border-radius: 10px;
                     box-shadow: 05px 05px 30px 00px rgba(1, 31, 23, 0.198);
                 }
