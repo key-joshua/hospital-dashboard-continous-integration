@@ -1,10 +1,10 @@
-# CSRLTD FINAL FRONTEND CHALLEGE
+# HOSPITAL DASHBOARD CONTINOUS INTEGRATION
 
 - This Frontend Challenge.
 
 #### This is the Hosted link of the frontend challenge [Access Web Page Direct]
 
-https://csrltd-final.netlify.app/
+https://hospital-dashboard-ci.netlify.app/
 
 #### This is the Github repository link of the frontend challenge.
 
